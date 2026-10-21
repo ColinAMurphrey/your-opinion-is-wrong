@@ -48,6 +48,12 @@
     #addendum.show { display:block; }
     @media (max-width:720px) {
       header { min-height:82vh; padding:52px 0 66px; }
+      h1 { font-size:clamp(2.25rem,8.5vw,3.75rem); line-height:.9; letter-spacing:-.06em; }
+      h2 { font-size:clamp(2rem,7vw,3.25rem); line-height:.95; }
+      .subtitle,.verdict p { font-size:clamp(1.05rem,3.8vw,1.28rem); }
+      .lede { font-size:clamp(1.05rem,3.8vw,1.22rem); }
+      .casefile p,.reason p { font-size:1rem; }
+      .reason b { font-size:1.32rem; }
       .casefile,.reasons { grid-template-columns:1fr; }
       section { padding:64px 0; }
       .seal { width:96px; }
@@ -55,14 +61,17 @@
     }
     @media (max-width:480px) {
       main,.verdict-inner { width:calc(100% - 32px); }
-      h1 { font-size:clamp(3.1rem,16vw,4.4rem); line-height:.86; }
-      h2 { font-size:clamp(2.3rem,12vw,3.5rem); }
-      .stamp { font-size:.68rem; letter-spacing:.09em; margin-left:4px; }
-      .subtitle { margin-top:28px; }
-      .arrow { margin-top:36px; font-size:.85rem; line-height:1.45; }
-      .casefile > div { padding:22px; }
+      h1 { font-size:clamp(2.1rem,9vw,2.7rem); line-height:.92; }
+      h2 { font-size:clamp(1.85rem,8vw,2.35rem); }
+      .stamp { font-size:.62rem; letter-spacing:.07em; margin-left:4px; }
+      .subtitle { margin-top:24px; }
+      .arrow { margin-top:32px; font-size:.78rem; line-height:1.45; }
+      .eyebrow { font-size:.66rem; letter-spacing:.12em; }
+      .casefile > div { padding:20px; }
+      .casefile h3 { font-size:.68rem; }
       .verdict { padding:38px 0; }
       .seal { margin-left:14px; }
+      footer { font-size:.62rem; }
     }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
   </style>
