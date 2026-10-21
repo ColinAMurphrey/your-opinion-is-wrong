@@ -17,4 +17,5 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_PAGES_TOKEN }}
+          wranglerVersion: '4.151.3'
           command: pages deploy public --project-name your-opinion-is-wrong --branch main
