@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A completely disproportionate, comically thorough explanation of why your opinion is probably wrong.">
+  <meta name="theme-color" content="#f6eddf">
+  <meta property="og:title" content="A Formal Notice Regarding Your Opinion">
+  <meta property="og:description" content="After a needlessly exhaustive review, your opinion has been found... adventurous.">
+  <title>A Formal Notice Regarding Your Opinion</title>
+  <style>
+    :root { --paper:#f6eddf; --ink:#1f2732; --red:#d84a3d; --blue:#1f5d7a; --line:#1f2732; --yellow:#f4c64c; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:Georgia, 'Times New Roman', serif; }
+    .topline { height:13px; background:repeating-linear-gradient(90deg,var(--red) 0 44px,var(--yellow) 44px 88px,var(--blue) 88px 132px); }
+    main { width:min(1120px,calc(100% - 40px)); margin:auto; }
+    header { min-height:91vh; display:grid; align-content:center; padding:64px 0 84px; position:relative; }
+    .stamp { display:inline-block; width:max-content; font:700 .76rem/1 Arial,sans-serif; letter-spacing:.13em; text-transform:uppercase; border:2px solid var(--red); color:var(--red); padding:8px 11px; transform:rotate(-3deg); margin:0 0 26px 8px; }
+    h1 { margin:0; max-width:1060px; font-size:clamp(4.4rem,11.8vw,10.6rem); line-height:.82; letter-spacing:-.075em; font-weight:900; text-wrap:balance; }
+    h1 span { color:var(--red); display:block; font-style:italic; letter-spacing:-.08em; }
+    .subtitle { max-width:720px; font-size:clamp(1.25rem,2.35vw,1.8rem); line-height:1.35; margin:38px 0 0; }
+    .arrow { font:700 1rem Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; color:var(--blue); margin-top:48px; text-decoration:none; }
+    .arrow:hover { color:var(--red); }
+    .rule { border:0; border-top:3px solid var(--line); margin:0; }
+    section { padding:90px 0; border-bottom:3px solid var(--line); }
+    .eyebrow { font:700 .76rem/1 Arial,sans-serif; letter-spacing:.16em; text-transform:uppercase; color:var(--red); margin:0 0 14px; }
+    h2 { font-size:clamp(2.5rem,6vw,5.7rem); letter-spacing:-.06em; line-height:.9; margin:0 0 30px; max-width:900px; }
+    .lede { font-size:clamp(1.2rem,2.1vw,1.55rem); line-height:1.5; max-width:770px; margin:0; }
+    .casefile { display:grid; grid-template-columns:1fr 1.3fr; gap:2px; background:var(--line); border:3px solid var(--line); margin-top:45px; }
+    .casefile > div { background:var(--paper); padding:28px; }
+    .casefile h3 { font:700 .77rem/1.2 Arial,sans-serif; text-transform:uppercase; letter-spacing:.11em; margin:0 0 14px; color:var(--blue); }
+    .casefile p { font-size:1.14rem; line-height:1.42; margin:0; }
+    .reasons { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:46px; }
+    .reason { border-top:7px solid var(--red); padding-top:15px; }
+    .reason:nth-child(2) { border-color:var(--yellow); } .reason:nth-child(3) { border-color:var(--blue); }
+    .reason b { display:block; font-size:1.55rem; line-height:1.03; letter-spacing:-.035em; margin-bottom:10px; }
+    .reason p { font-size:1.08rem; line-height:1.45; margin:0; }
+    .verdict { background:var(--red); color:#fff9ed; padding:clamp(38px,7vw,82px); margin:0 calc(50% - 50vw); }
+    .verdict-inner { width:min(1120px,calc(100% - 40px)); margin:auto; }
+    .verdict .eyebrow { color:var(--yellow); }.verdict h2 { max-width:1000px; }.verdict p { max-width:760px; font-size:clamp(1.2rem,2.1vw,1.6rem); line-height:1.45; }
+    .seal { width:136px; aspect-ratio:1; border:3px solid currentColor; border-radius:50%; display:grid; place-items:center; text-align:center; font:700 .7rem/1.25 Arial,sans-serif; letter-spacing:.12em; text-transform:uppercase; transform:rotate(12deg); float:right; margin:0 0 12px 25px; }
+    .fineprint { font:italic 1rem/1.45 Georgia,serif; opacity:.87; }
+    footer { padding:34px 0 55px; display:flex; justify-content:space-between; gap:20px; font:700 .73rem/1.35 Arial,sans-serif; letter-spacing:.1em; text-transform:uppercase; }
+    button { appearance:none; border:2px solid currentColor; background:transparent; padding:12px 15px; color:inherit; font:700 .72rem Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
+    button:hover { background:var(--ink); color:var(--paper); }
+    #addendum { display:none; margin-top:25px; border-left:6px solid var(--yellow); padding:16px 18px; font-size:1.15rem; line-height:1.45; background:rgba(255,255,255,.12); }
+    #addendum.show { display:block; }
+    @media (max-width:720px) { header { min-height:82vh; } .casefile,.reasons { grid-template-columns:1fr; } section { padding:64px 0; } .seal { width:96px; } footer { flex-direction:column; } }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <main>
+    <header>
+      <div class="stamp">Independent Opinion Review Board</div>
+      <h1>After careful consideration,<span>your opinion is wrong.</span></h1>
+      <p class="subtitle">Not *morally* wrong. Not even necessarily *factually* wrong. But it has been placed under a tiny ceremonial microscope and found to be wearing socks with sandals.</p>
+      <a class="arrow" href="#evidence">Read the unnecessarily long explanation ↓</a>
+    </header>
+    <hr class="rule">
+    <section id="evidence">
+      <p class="eyebrow">Exhibit A — the situation</p>
+      <h2>We put your take in the big machine.</h2>
+      <p class="lede">The machine made several noises, flashed one orange light, and printed a receipt that simply said, “Hmm.” This is not what we hoped for. The machine is usually very easy to impress.</p>
+      <div class="casefile">
+        <div><h3>Opinion submitted</h3><p>“Actually, I think I have a pretty reasonable point.”</p></div>
+        <div><h3>Expert finding</h3><p>Reasonable? Certainly. But so is a folding chair. Neither should be allowed to lead a parade without supervision.</p></div>
+      </div>
+    </section>
+    <section>
+      <p class="eyebrow">The peer review</p>
+      <h2>Three completely legitimate reasons this went sideways.</h2>
+      <div class="reasons">
+        <article class="reason"><b>1. It arrived too confidently.</b><p>Any thought that enters a room without looking both ways has already raised several administrative concerns.</p></article>
+        <article class="reason"><b>2. It ignored the vibes.</b><p>Numbers, logic, and charts were invited to this discussion. The vibes were also invited. Your opinion did not RSVP for the vibes.</p></article>
+        <article class="reason"><b>3. It used the phrase “obviously.”</b><p>Nothing good has ever followed that word except perhaps “obviously, do not touch the stove.”</p></article>
+      </div>
+    </section>
+  </main>
+  <section class="verdict">
+    <div class="verdict-inner">
+      <div class="seal">Officially<br>kind of<br>wrong</div>
+      <p class="eyebrow">Final ruling, effective immediately</p>
+      <h2>Your opinion may continue to exist, but it must now wear a little hat.</h2>
+      <p>We are not asking you to change your mind. That would be invasive. We are simply asking your mind to sit in the waiting room for a moment and think about what it did.</p>
+      <button id="button" type="button">Request an appeal</button>
+      <div id="addendum">Appeal received. After a fresh review by three pigeons, a houseplant, and one person who only heard the last sentence: the original ruling stands. The hat remains mandatory.</div>
+    </div>
+  </section>
+  <main>
+    <footer><span>© The Bureau of Extremely Specific Corrections</span><span>Opinions reviewed with undue ceremony</span></footer>
+  </main>
+  <script>
+    document.getElementById('button').addEventListener('click', () => document.getElementById('addendum').classList.add('show'));
+  </script>
+</body>
+</html>
